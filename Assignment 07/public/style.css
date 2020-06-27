@@ -1,0 +1,138 @@
+body{
+    background-color: black;
+}
+#container{
+    margin: 20px auto;
+    background: url(Images/background.jpg);
+    width: 80%;
+    height: 620px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+#calculator{
+    border: 1px solid black;
+    width: 320px;
+    height: 520px;
+    background-color: white;
+    position: relative;
+    margin: 0 auto;
+    top: 50px;
+    box-shadow: 6px 6px 10px gray;
+}
+#result{
+    height: 120px;
+
+}
+#keyboard{
+    height: 400px;
+}
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: gray;
+
+}
+#output{
+    color: black;
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+.number, .empty{
+    background-color: white;
+}
+.number, .operator{
+    cursor: pointer;
+}
+.operator:active, .number:active{
+    font-size: 12px;
+}
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
+button:nth-child(1){
+    background-color:    #ec7063    ;
+    color: white;
+}
+button:nth-child(2){
+    background-color:    #ec7063    ;
+    color: white;
+}
+button:nth-child(3){
+    background-color:   #5d6d7e   ;
+    color: white;
+}
+button:nth-child(4){
+    font-size: 20px;
+    background-color:   #5d6d7e   ;
+    color: white;
+}
+button:nth-child(8){
+    font-size: 20px;
+    background-color:   #5d6d7e   ;
+    color: white;
+}
+button:nth-child(12){
+    font-size: 20px;
+    background-color:   #5d6d7e   ;
+    color: white;
+}
+button:nth-child(16){
+    font-size: 20px;
+    color: white;
+    background-color:   #5d6d7e  ;
+}
+button:nth-child(20){
+    font-size: 20px;
+    background-color: #58d68d;
+    color: white;
+}
+@media (max-width:650px){
+    #calculator{
+        width: 85%;
+        height: 480px;
+    }
+    .operator, .number, .empty{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width:400px){
+    #calculator{
+        width: 85%;
+        height: 370px;
+    }
+    .operator, .number, .empty{
+        width: 20px;
+        height: 20px;
+    }
+    .operator, .number{
+        font-size: 8px !important;
+        text-align: center !important;
+        padding: 5px;
+    }
+    .operator:active, .number:active{
+        font-size: 6px !important;
+        text-align: center !important;
+        padding: 5px;
+    }
+    #output{
+        font-size: 20px !important;
+    }
+    
+}
